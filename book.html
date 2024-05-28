@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.6/JsBarcode.all.min.js"></script>
+
+    <title>Movie Ticket Booking Website</title>
+</head>
+
+<body>
+    <div class="book">
+        <div class="left">
+            <img src="img/poster-phim-dien-anh-doraemon-43-scaled.jpg" alt="" id="poster">
+            <div class="play">
+                <i class="bi bi-play-fill" id="play"></i>
+            </div>
+            <div class="cont">
+                <h6>Đạo diễn:</h6>
+                <p>Imai Kazuaki</p>
+                <h6>Dựa trên:</h6>
+                <p>Doraemon bởi Fujiko F. Fujio</p>
+                <h6>Diễn viên:</h6>
+                <p> Mizuta Wasabi
+                    Seki Tomokazu
+                    Kimura Subaru
+                    Ohara Megumi
+                    Kakazu Yumi</p>
+            </div>
+        </div>
+        <div class="right">
+            <video src="video/PHIM ĐIỆN ẢNH DORAEMON- NOBITA VÀ BẢN GIAO HƯỞNG ĐỊA CẦU - TRAILER - DKKC- 05.2024.mp4" id="video"></video>
+            <div class="head_time">
+                <h1 id="title">Doraemon: Nobita và Bản giao hưởng địa cầu</h1>
+                <div class="time">
+                    <h6><i class="bi bi-clock"></i> 1 giờ 55 phút</h6>
+                    <button>P</button>
+                </div>
+            </div>
+
+            <div class="date_type">
+                <div class="left_card">
+                    <h6 class="title">Thứ 7-Ngày 18 tháng 5</h6>
+                    <div class="card_month crd">
+                        <li>
+                            <h6>Thứ 2</h6>
+                            <h6 class="date_point">13</h6>
+                        </li>
+                        <li>
+                            <h6>Thứ 3</h6>
+                            <h6 class="date_point">14</h6>
+                        </li>
+                        <li>
+                            <h6>Thứ 4</h6>
+                            <h6 class="date_point">15</h6>
+                        </li>
+                        <li>
+                            <h6>Thu 5</h6>
+                            <h6 class="date_point">16</h6>
+                        </li>
+                        <li>
+                            <h6>Thứ 6</h6>
+                            <h6 class="date_point">17</h6>
+                        </li>
+                        <li>
+                            <h6>Thứ 7</h6>
+                            <h6 class="date_point">18</h6>
+                        </li>
+                        <li>
+                            <h6>Chủ Nhật</h6>
+                            <h6 class="date_point">19</h6>
+                        </li>
+                        <li>
+                            <h6>Thứ 2</h6>
+                            <h6 class="date_point">20</h6>
+                        </li>
+                        <li>
+                            <h6>Thứ 3</h6>
+                            <h6 class="date_point">21</h6>
+                        </li>
+                        <li>
+                            <h6>Thứ 4</h6>
+                            <h6 class="date_point">22</h6>
+                        </li>
+                        <li>
+                            <h6>Thứ 5</h6>
+                            <h6 class="date_point">23</h6>
+                        </li>
+                        <li>
+                            <h6>Thứ 6</h6>
+                            <h6 class="date_point">24</h6>
+                        </li>
+                        <li>
+                            <h6>Thứ7</h6>
+                            <h6 class="date_point">25</h6>
+                        </li>
+                        <li>
+                            <h6>Chủ nhật</h6>
+                            <h6 class="date_point">26</h6>
+                        </li>
+                        <li>
+                            <h6>Thứ 2</h6>
+                            <h6 class="date_point">27</h6>
+                        </li>
+                        <li>
+                            <h6>Thứ 3</h6>
+                            <h6 class="date_point">28</h6>
+                        </li>
+                    </div>
+                </div>
+                <div class="right_card">
+                    <h6 class="title">Thời gian chiếu</h6>
+                    <div class="card_month crd">
+                        <li>
+                            <h6>2D</h6>
+                            <h6>8:00</h6>
+                        </li>
+                        <li>
+                            <h6>2D</h6>
+                            <h6 class="h6_active">14:00</h6>
+                        </li>
+                        <li>
+                            <h6>2D</h6>
+                            <h6>8:00</h6>
+                        </li>
+                        <li>
+                            <h6>3D</h6>
+                            <h6>14:00</h6>
+                        </li>
+
+                        <li>
+                            <h6>3D</h6>
+                            <h6>8:00</h6>
+                        </li>
+                        <li>
+                            <h6>GOLD</h6>
+                            <h6>14:00</h6>
+                        </li>
+                        <li>
+                            <h6>GOLD</h6>
+                            <h6>14:00</h6>
+                        </li>
+                        <li>
+                            <h6>GOLD</h6>
+                            <h6>14:00</h6>
+                        </li>
+
+                        <li>
+                            <h6>IMAX</h6>
+                            <h6>8:00</h6>
+                        </li>
+                        <li>
+                            <h6>IMAX</h6>
+                            <h6>8:00</h6>
+                        </li>
+                        <li>
+                            <h6>IMAX</h6>
+                            <h6>8:00</h6>
+                        </li>
+                    </div>
+                </div>
+            </div>
+
+            <div class="screen" id="screen">
+                Screen
+            </div>
+
+            <!-- chairs  -->
+            <div class="chair" id="chair">
+                <!-- <div class="row">
+                    <span>F</span>
+                    <li class="seat">1</li>
+                    <li class="seat">2</li>
+                    <li class="seat">3</li>
+                    <li class="seat">4</li>
+                    <li class="seat">5</li>
+                    <li class="seat">6</li>
+                    <li class="seat">7</li>
+                    <li class="seat">8</li>
+                    <li class="seat">9</li>
+                    <li class="seat">10</li>
+                    <li class="seat">11</li>
+                    <li class="seat">12</li>
+                    <li class="seat">13</li>
+                    <li class="seat">14</li>
+                    <li class="seat">15</li>
+                    <li class="seat">16</li>
+                    <li class="seat">17</li>
+                    <li class="seat">18</li>
+                    <span>F</span>
+                </div>
+                <div class="row">
+                    <span>E</span>
+                    <li class="seat">1</li>
+                    <li class="seat">2</li>
+                    <li class="seat">3</li>
+                    <li class="seat">4</li>
+                    <li class="seat">5</li>
+                    <li class="seat">6</li>
+                    <li class="seat">7</li>
+                    <li class="seat">8</li>
+                    <li class="seat">9</li>
+                    <li class="seat">10</li>
+                    <li class="seat">11</li>
+                    <li class="seat">12</li>
+                    <li class="seat">13</li>
+                    <li class="seat">14</li>
+                    <li class="seat">15</li>
+                    <li class="seat">16</li>
+                    <li class="seat">17</li>
+                    <li class="seat">18</li>
+                    <span>E</span>
+                </div>
+                <div class="row">
+                    <span>D</span>
+                    <li class="seat">1</li>
+                    <li class="seat">2</li>
+                    <li class="seat">3</li>
+                    <li class="seat">4</li>
+                    <li class="seat">5</li>
+                    <li class="seat">6</li>
+                    <li class="seat">7</li>
+                    <li class="seat">8</li>
+                    <li class="seat">9</li>
+                    <li class="seat">10</li>
+                    <li class="seat">11</li>
+                    <li class="seat">12</li>
+                    <li class="seat">13</li>
+                    <li class="seat">14</li>
+                    <li class="seat">15</li>
+                    <li class="seat">16</li>
+                    <li class="seat">17</li>
+                    <li class="seat">18</li>
+                    <span>D</span>
+                </div>
+                <div class="row">
+                    <span>C</span>
+                    <li class="seat">1</li>
+                    <li class="seat">2</li>
+                    <li class="seat">3</li>
+                    <li class="seat">4</li>
+                    <li class="seat">5</li>
+                    <li class="seat">6</li>
+                    <li class="seat">7</li>
+                    <li class="seat">8</li>
+                    <li class="seat">9</li>
+                    <li class="seat">10</li>
+                    <li class="seat">11</li>
+                    <li class="seat">12</li>
+                    <li class="seat">13</li>
+                    <li class="seat">14</li>
+                    <li class="seat">15</li>
+                    <li class="seat">16</li>
+                    <li class="seat">17</li>
+                    <li class="seat">18</li>
+                    <span>C</span>
+                </div>
+                <div class="row">
+                    <span>B</span>
+                    <li class="seat">1</li>
+                    <li class="seat">2</li>
+                    <li class="seat">3</li>
+                    <li class="seat">4</li>
+                    <li class="seat">5</li>
+                    <li class="seat">6</li>
+                    <li class="seat">7</li>
+                    <li class="seat">8</li>
+                    <li class="seat">9</li>
+                    <li class="seat">10</li>
+                    <li class="seat">11</li>
+                    <li class="seat">12</li>
+                    <li class="seat">13</li>
+                    <li class="seat">14</li>
+                    <li class="seat">15</li>
+                    <li class="seat">16</li>
+                    <li class="seat">17</li>
+                    <li class="seat">18</li>
+                    <span>B</span>
+                </div>
+                <div class="row">
+                    <span>A</span>
+                    <li class="seat">1</li>
+                    <li class="seat">2</li>
+                    <li class="seat">3</li>
+                    <li class="seat">4</li>
+                    <li class="seat">5</li>
+                    <li class="seat">6</li>
+                    <li class="seat">7</li>
+                    <li class="seat">8</li>
+                    <li class="seat">9</li>
+                    <li class="seat">10</li>
+                    <li class="seat">11</li>
+                    <li class="seat">12</li>
+                    <li class="seat">13</li>
+                    <li class="seat">14</li>
+                    <li class="seat">15</li>
+                    <li class="seat">16</li>
+                    <li class="seat">17</li>
+                    <li class="seat">18</li>
+                    <span>A</span>
+                </div> -->
+            </div>
+            <!-- ticket -->
+            <div class="ticket" id="ticket">
+                <!-- <div class="tic">
+                    <div class="barcode">
+                        <div class="card">
+                            <h6>HÀNG A</h6>
+                            <h6>18 Tháng 5 2023</h6>
+                        </div>
+                        <div class="card">
+                            <h6>Ghế 18</h6>
+                            <h6>14:00</h6>
+                        </div>
+
+                        <svg id="barcode"></svg>
+                        <h5>Aeon Mall Hà Đông</h5>
+                    </div>
+                    <div class="tic_details">
+                        <div class="type">2D</div>
+                        <h5 class="pvr"><span>Aeon Mall</span>Hà Đông</h5>
+                        <h1>Doraemon: Nobita và Bản giao hưởng địa cầu</h1>
+                        <div class="seat_det">
+                            <div class="seat_cr">
+                                <h5>Hàng</h5>
+                                <h5>A</h5>
+                            </div>
+                            <div class="seat_cr">
+                                <h5>Ghế</h5>
+                                <h5>18</h5>
+                            </div>
+                            <div class="seat_cr">
+                                <h5>Ngày</h5>
+                                <h5>18 <sub>Tháng 5</sub></h5>
+                            </div>
+                            <div class="seat_cr">
+                                <h5>Thời gian</h5>
+                                <h5>14:00<sub>pm</sub></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <!-- Details -->
+            <div class="details" id="det">
+                <div class="details_chair">
+                    <li>Có sẵn</li>
+                    <li>Không thể chọn</li>
+                    <li>Đã chọn</li>
+                </div>
+            </div>
+            <button class="book_tic" id="book_ticket">
+                <i class="bi bi-arrow-right-short"></i>
+            </button>
+            <button class="book_tic" id="back_ticket">
+                <i class="bi bi-arrow-left-short"></i>
+            </button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <!-- <script>
+        JsBarcode("#barcode", "ABCD123456");
+    </script> -->
+</body>
+
+</html>
