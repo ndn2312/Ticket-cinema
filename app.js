@@ -93,11 +93,11 @@ let pvr = [
         series: [ 'F', 'E', 'D', 'C', 'B', 'A' ],
         row_section: 3,
         seat: 18,
-        F: [1,2,3,4,5,6,7],
+        F: [],
         E: [0,1,2,3,4,5],
         D: [3,4,5,6,7,8],
-        C: [7,8,9,0],
-        B: [ 0],
+        C: [],
+        B: [],
         A: [ ],
         price: [ 55.000, 60.000, 75.000, 75.000, 60.000, 55.000],
         date: 31,
@@ -253,6 +253,9 @@ document.getElementById('book_ticket').addEventListener('click',() =>{
             <h6>GHẾ ${seat_no}</h6>
             <h6>14:00</h6>
         </div>
+        <div class="seat_cr">
+                <h4>Giá vé: ${seat_price}.000 Đ</h4>
+            </div>
 
         <svg id="${seat_sr}${seat_no}barcode"></svg>
         <h5>Aeon Mall Hà Đông</h5>
@@ -276,14 +279,18 @@ document.getElementById('book_ticket').addEventListener('click',() =>{
             </div>
             <div class="seat_cr">
                 <h5>Thời gian</h5>
-                <h5>14:00<sub>pm</sub></h5>
+                <h5>14:00<sub>AM/sub></h5>
+            </div>
+            <div class="seat_cr">
+                <h5>Giá vé</h5>
+                <h5>${seat_price}.000 Đ</h5>
             </div>
         </div>
     </div>`
       document.getElementById('ticket').appendChild(tic);
 
       JsBarcode(`#${seat_sr}${seat_no}barcode`, 
-      `${seat_sr.toLocaleUpperCase()}${seat_no}${seat_price}${main_date}2024`);
+      `${seat_sr.toLocaleUpperCase()}${seat_no}NDN2024`);
 
     })
 })

@@ -13,10 +13,10 @@
 <style>
     .go-back-button {
         position: fixed;
-        top: 20px; /* Thay đổi từ bottom: 20px thành top: 20px */
-        left: 20px; /* Thêm left: 20px để di chuyển nút sang bên trái */
+        top: 20px;
+        left: 10px; 
         padding: 10px 20px;
-        background-color: #4CAF50;
+        background-color: #ff6347;
         color: white;
         border: none;
         border-radius: 4px;
@@ -24,27 +24,17 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 20px;
+        border-radius: 20px;
+
+
+
+    }
+    .go-back-button i {
+        font-size: 20px;
     }
     
-    .go-back-button i {
-        font-size: 24px;
-    }
-    .reload-btn {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: #ff6347;
-        color: white;
-        border: none;
-        border-radius: 20px;
-        padding: 10px 20px;
-        font-size: 16px;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+      
 </style>
 
 <body>
@@ -203,6 +193,8 @@
                     <li>Có sẵn</li>
                     <li>Không thể chọn</li>
                     <li>Đã chọn</li>
+                    <li>VIP: D,C</li>
+                    <li>THƯỜNG: A,B,E,F</li>
                 </div>
             </div>
             <button class="book_tic" id="book_ticket">
@@ -217,15 +209,15 @@
     <script>
         // Tạo nút bấm
         const reloadButton = document.createElement('button');
-        reloadButton.style.backgroundColor = '#ff6347'; // Màu cam
-        reloadButton.style.borderRadius = '20px'; // Bo tròn nút
+        reloadButton.style.backgroundColor = '#ff6347'; 
+        reloadButton.style.borderRadius = '20px'; 
 
-        reloadButton.style.border = 'none'; // Không có viền
-        reloadButton.style.cursor = 'pointer'; // Đổi con trỏ khi di chuột vào nút
-        reloadButton.style.position = 'fixed'; // Đặt vị trí cố định
-        reloadButton.style.top = '10px'; // Khoảng cách từ trên xuống
-        reloadButton.style.right = '10px'; // Khoảng cách từ phải sang
-        reloadButton.style.fontSize = '24px'; // Kích thước biểu tượng
+        reloadButton.style.border = 'none'; 
+        reloadButton.style.cursor = 'pointer'; 
+        reloadButton.style.position = 'fixed'; 
+        reloadButton.style.top = '25px'; 
+        reloadButton.style.right = '10px'; 
+        reloadButton.style.fontSize = '37px'; 
 
         // Tạo biểu tượng
         const icon = document.createElement('i');
