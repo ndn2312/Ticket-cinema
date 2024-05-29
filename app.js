@@ -32,7 +32,7 @@ video.addEventListener('ended', () =>{
 
 let date = new Date();
 let main_date = date.getDate();
-// console.log((main_date))
+console.log((main_date))
 
 
 Array.from(document.getElementsByClassName('date_point')).forEach((el) => {
@@ -58,7 +58,7 @@ let pvr = [
         B: [ 5, 16, 15],
         A: [ 1, 2, 11, 12 ],
         price: [ 55.000, 60.000, 75.000, 75.000, 60.000, 55.000],
-        date: 27,
+        date: 29,
         img: 'img/poster-phim-dien-anh-doraemon-43-scaled.jpg',
         video: 'video/PHIM ĐIỆN ẢNH DORAEMON- NOBITA VÀ BẢN GIAO HƯỞNG ĐỊA CẦU - TRAILER - DKKC- 05.2024.mp4'
         // background: 'img/bg.png',
@@ -79,7 +79,7 @@ let pvr = [
         B: [ 0],
         A: [ ],
         price: [ 55.000, 60.000, 75.000, 75.000, 60.000, 55.000],
-        date: 27,
+        date: 30,
         img: 'img/poster-phim-dien-anh-doraemon-43-scaled.jpg',
         video: 'video/PHIM ĐIỆN ẢNH DORAEMON- NOBITA VÀ BẢN GIAO HƯỞNG ĐỊA CẦU - TRAILER - DKKC- 05.2024.mp4'
         // background: 'img/bg.png',
@@ -94,13 +94,34 @@ let pvr = [
         row_section: 3,
         seat: 18,
         F: [1,2,3,4,5,6,7],
+        E: [],
+        D: [],
+        C: [7,8,9,0],
+        B: [ 0],
+        A: [ ],
+        price: [ 55.000, 60.000, 75.000, 75.000, 60.000, 55.000],
+        date: 31,
+        img: 'img/poster-phim-dien-anh-doraemon-43-scaled.jpg',
+        video: 'video/PHIM ĐIỆN ẢNH DORAEMON- NOBITA VÀ BẢN GIAO HƯỞNG ĐỊA CẦU - TRAILER - DKKC- 05.2024.mp4'
+        // background: 'img/bg.png',
+    },
+    {
+        pvr: 'Aeon Mall Hà Đông',
+        movie: 'Doraemon',
+        loc: 'Dương Nội, Hà Đông, Hà Nội',
+        audi: 2,
+        type: '2D',
+        series: [ 'F', 'E', 'D', 'C', 'B', 'A' ],
+        row_section: 3,
+        seat: 18,
+        F: [1,2,3,4,5,6,7],
         E: [0,1,2,3,4,5],
         D: [3,4,5,6,7,8],
         C: [7,8,9,0],
         B: [ 0],
         A: [ ],
         price: [ 55.000, 60.000, 75.000, 75.000, 60.000, 55.000],
-        date: 28,
+        date: 1,
         img: 'img/poster-phim-dien-anh-doraemon-43-scaled.jpg',
         video: 'video/PHIM ĐIỆN ẢNH DORAEMON- NOBITA VÀ BẢN GIAO HƯỞNG ĐỊA CẦU - TRAILER - DKKC- 05.2024.mp4'
         // background: 'img/bg.png',
@@ -122,7 +143,7 @@ let addSeats = (arr) => {
 
             let booked_seats = [];
             booked_seats = [...eval(series[index])];
-            console.log(booked_seats);
+            // console.log(booked_seats);
             // Create Seats
         for (let seats = 0; seats < seat; seats++) {
             if (seats === 0) {
