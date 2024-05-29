@@ -134,7 +134,7 @@ body {
 }
 
 .book .right .head_time h1 {
-    color: #f40c0c;
+    color: #3ef40cd8;
     font-weight: 600;
 }
 .book .right .head_time .time {
@@ -186,7 +186,7 @@ body {
 }
 
 .book .right .title {
-    color: #c2e60b;
+    color: #0bea91;
     font-size: 15px;
     
 }
@@ -481,9 +481,9 @@ body {
     background: #fff;
 }
 
-.book .right .ticket .tic .tic_details{
+/* .book .right .ticket .tic .tic_details{
     background: url(img/doraemon-nobita-va-ban-giao-huong-dia-cau-poster.jpg)no-repeat center -35px /cover;
-}
+} */
 
 .book .right .ticket .tic .barcode .card{
     width: 100%;
@@ -540,8 +540,10 @@ body {
     color: rgb(245, 7, 7);
     left: 20px;
     bottom: 80px;
+    
 
 }
+
 
 .book .right .ticket .tic .tic_details .seat_det{
     position:absolute;

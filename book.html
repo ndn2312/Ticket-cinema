@@ -27,11 +27,10 @@
         width: 20px;
         border-radius: 20px;
 
-
-
     }
     .go-back-button i {
         font-size: 20px;
+        
     }
     
       
@@ -45,12 +44,12 @@
                 <i class="bi bi-play-fill" id="play"></i>
             </div>
             <div class="cont">
-                <h6>Đạo diễn:</h6>
-                <p>Imai Kazuaki</p>
-                <h6>Dựa trên:</h6>
-                <p>Doraemon bởi Fujiko F. Fujio</p>
-                <h6>Diễn viên:</h6>
-                <p> Mizuta Wasabi
+                <h6 id="introduce1">Đạo diễn:</h6>
+                <p id="introduce2">Imai Kazuaki</p>
+                <h6 id="introduce3">Dựa trên:</h6>
+                <p id="introduce4">Doraemon bởi Fujiko F. Fujio</p>
+                <h6 id="introduce5">Diễn viên:</h6>
+                <p id="introduce6"> Mizuta Wasabi
                     Seki Tomokazu
                     Kimura Subaru
                     Ohara Megumi
@@ -63,8 +62,8 @@
             <div class="head_time">
                 <h1 id="title">Doraemon: Nobita và Bản giao hưởng địa cầu</h1>
                 <div class="time">
-                    <h6><i class="bi bi-clock"></i> 1 giờ 55 phút</h6>
-                    <button>P</button>
+                    <h6 id="time"><i class="bi bi-clock"></i> 1 giờ 55 phút</h6>
+                    <button id="MPA">P</button>
                 </div>
             </div>
 
@@ -211,7 +210,7 @@
         const reloadButton = document.createElement('button');
         reloadButton.style.backgroundColor = '#ff6347'; 
         reloadButton.style.borderRadius = '20px'; 
-
+        reloadButton.style.color = '#fff'; 
         reloadButton.style.border = 'none'; 
         reloadButton.style.cursor = 'pointer'; 
         reloadButton.style.position = 'fixed'; 
@@ -235,13 +234,43 @@
 
      
     <button class="go-back-button" onclick="goBack()">
-        <i class="bi bi-arrow-left-square-fill"></i>
-    </button>
+        <i class="bi bi-caret-left-fill"></i>    </button>
 
     <script>
         function goBack() {
             window.history.back();
         }
+    </script>
+    <script>
+   // Lấy ngày giờ hiện tại
+const currentDate = new Date();
+
+// Lấy thứ (0 - 6, với 0 là Chủ nhật)
+const dayOfWeek = currentDate.getDay();
+const daysOfWeek = ['Chủ Nhật', 'Thứ Hai', 'Thứ Ba', 'Thứ Tư', 'Thứ Năm', 'Thứ Sáu', 'Thứ Bảy'];
+const dayName = daysOfWeek[dayOfWeek];
+
+// Lấy ngày trong tháng
+const day = currentDate.getDate();
+
+// Lấy tháng (0 - 11)
+const month = currentDate.getMonth() + 1;
+
+// Lấy năm
+const year = currentDate.getFullYear();
+
+// Lấy giờ
+const hours = currentDate.getHours();
+
+// Lấy phút
+const minutes = currentDate.getMinutes();
+
+// Tạo chuỗi hiển thị thời gian
+const timeString = `${dayName} - Ngày ${day} tháng ${month} năm ${year}, ${hours}:${minutes}`;
+
+// Cập nhật nội dung của phần tử HTML
+const titleElement = document.querySelector('h6.title');
+titleElement.textContent = timeString;
     </script>
     <!-- <script>
         JsBarcode("#barcode", "ABCD123456");

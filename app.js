@@ -6,6 +6,7 @@ let url_segment = url.split('?');
 let play_btn = document.getElementById('play');
 let video = document.getElementById('video');
 
+
 play_btn.addEventListener('click', () => {
      if (video.paused) {
         video.play();
@@ -45,6 +46,15 @@ let pvr = [
     {
         pvr: 'Aeon Mall Hà Đông',
         movie: 'Doraemon',
+        title:'Doraemon: Nobita và bản giao hưởng địa cầu',
+        time:' 1 giờ 15 phút',
+        MPA:'P',
+        Introduce1:'Đạo diễn:',
+        Introduce2:'Imai Kazuaki',
+        Introduce3:'Dựa trên:',
+        Introduce4:'Doraemon bởi Fujiko F. Fujio',
+        Introduce5:'Diễn Viên:',
+        Introduce6:'Mizuta Wasabi,Seki Tomokazu,Kimura Subaru.Ohara Megumi.Kakazu Yumi',
         loc: 'Dương Nội, Hà Đông, Hà Nội',
         audi: 1,
         type: '2D',
@@ -60,12 +70,17 @@ let pvr = [
         price: [ 55.000, 60.000, 75.000, 75.000, 60.000, 55.000],
         date: 29,
         img: 'img/poster-phim-dien-anh-doraemon-43-scaled.jpg',
-        video: 'video/PHIM ĐIỆN ẢNH DORAEMON- NOBITA VÀ BẢN GIAO HƯỞNG ĐỊA CẦU - TRAILER - DKKC- 05.2024.mp4'
-        // background: 'img/bg.png',
+        video: 'video/PHIM ĐIỆN ẢNH DORAEMON- NOBITA VÀ BẢN GIAO HƯỞNG ĐỊA CẦU - TRAILER - DKKC- 05.2024.mp4',
+        background: 'img/doraemon-nobita-va-ban-giao-huong-dia-cau-poster.jpg',
+        // backgroundticket:'img/doraemon-nobita-va-ban-giao-huong-dia-cau-poster.jpg',
+
     },
     {
         pvr: 'Aeon Mall Hà Đông',
         movie: 'Doraemon',
+        title:'Doraemon: Nobita và bản giao hưởng địa cầu',
+        time:' 1 giờ 15 phút',
+        MPA:'P',
         loc: 'Dương Nội, Hà Đông, Hà Nội',
         audi: 2,
         type: '2D',
@@ -81,12 +96,45 @@ let pvr = [
         price: [ 55.000, 60.000, 75.000, 75.000, 60.000, 55.000],
         date: 30,
         img: 'img/poster-phim-dien-anh-doraemon-43-scaled.jpg',
-        video: 'video/PHIM ĐIỆN ẢNH DORAEMON- NOBITA VÀ BẢN GIAO HƯỞNG ĐỊA CẦU - TRAILER - DKKC- 05.2024.mp4'
-        // background: 'img/bg.png',
+        video: 'video/PHIM ĐIỆN ẢNH DORAEMON- NOBITA VÀ BẢN GIAO HƯỞNG ĐỊA CẦU - TRAILER - DKKC- 05.2024.mp4',
+        // background: 'img/doraemon-nobita-va-ban-giao-huong-dia-cau-poster.jpg',
     },
     {
         pvr: 'Aeon Mall Hà Đông',
         movie: 'Doraemon',
+        title:'Doraemon: Nobita và bản giao hưởng địa cầu',
+        time:' 1 giờ 15 phút',
+        MPA:'P',
+        loc: 'Dương Nội, Hà Đông, Hà Nội',
+        audi: 2,
+        type: '2D',
+        series: [ 'F', 'E', 'D', 'C', 'B', 'A' ],
+        row_section: 3,
+        seat: 18,
+        F: [1,2,3,4,5,6,7],
+        E: [0,1,2,3,4,5],
+        D: [3,4,5,6,7,8],
+        C: [7,8,9,0],
+        B: [0],
+        A: [1,2,3 ],
+        price: [ 55.000, 60.000, 75.000, 75.000, 60.000, 55.000],
+        date: 31,
+        img: 'img/poster-phim-dien-anh-doraemon-43-scaled.jpg',
+        video: 'video/PHIM ĐIỆN ẢNH DORAEMON- NOBITA VÀ BẢN GIAO HƯỞNG ĐỊA CẦU - TRAILER - DKKC- 05.2024.mp4',
+        // background: 'img/doraemon-nobita-va-ban-giao-huong-dia-cau-poster.jpg',
+    },
+    {
+        pvr: 'Aeon Mall Hà Đông',
+        movie: 'Latmat7',
+        title:'Lật mặt 7: Một điều ước',
+        time:' 2 giờ 18 phút',
+        MPA:'K',
+        Introduce1:'Đạo diễn:',
+        Introduce2:'Lý Hải',
+        Introduce3:'',
+        Introduce4:'',
+        Introduce5:'Diễn Viên:',
+        Introduce6:'Thanh Hiền, Trương Minh Cường, Đinh Y Nhung, Quách Ngọc Tuyên, Trâm Anh, Trần Kim Hải',
         loc: 'Dương Nội, Hà Đông, Hà Nội',
         audi: 1,
         type: '2D',
@@ -100,12 +148,67 @@ let pvr = [
         B: [],
         A: [ ],
         price: [ 55.000, 60.000, 75.000, 75.000, 60.000, 55.000],
-        date: 31,
-        img: 'img/poster-phim-dien-anh-doraemon-43-scaled.jpg',
-        video: 'video/PHIM ĐIỆN ẢNH DORAEMON- NOBITA VÀ BẢN GIAO HƯỞNG ĐỊA CẦU - TRAILER - DKKC- 05.2024.mp4'
-        // background: 'img/bg.png',
+        date: 29,
+        img: 'img/latmat7.jpg',
+        video: 'video/LẬT MẶT 7- MỘT ĐIỀU ƯỚC - OFFICIAL TRAILER - Khởi chiếu 26.04.2024.mp4.crdownload',
+        background:'img/latmat7.jpg',
+        // backgroundticket:'img/latmat7.jpg',
+        
     },
-   
+    {
+        pvr: 'Aeon Mall Hà Đông',
+        movie: 'Latmat7',
+        title:'Lật mặt 7: Một điều ước',
+        time:' 2 giờ 18 phút',
+        MPA:'K',
+        loc: 'Dương Nội, Hà Đông, Hà Nội',
+        audi: 1,
+        type: '2D',
+        series: [ 'F', 'E', 'D', 'C', 'B', 'A' ],
+        row_section: 3,
+        seat: 18,
+        F: [],
+        E: [0,1,2,3,4,5],
+        D: [3,4,5,6,7,8],
+        C: [1],
+        B: [2],
+        A: [3 ],
+        price: [ 55.000, 60.000, 75.000, 75.000, 60.000, 55.000],
+        date: 30,
+        img: 'img/latmat7.jpg',
+        video: 'video/LẬT MẶT 7- MỘT ĐIỀU ƯỚC - OFFICIAL TRAILER - Khởi chiếu 26.04.2024.mp4.crdownload',
+        background:'img/latmat7.jpg',
+        // backgroundticket:'img/latmat7.jpg'
+
+        
+    },
+    {
+        pvr: 'Aeon Mall Hà Đông',
+        movie: 'Latmat7',
+        title:'Lật mặt 7: Một điều ước',
+        time:' 2 giờ 18 phút',
+        MPA:'K',
+        loc: 'Dương Nội, Hà Đông, Hà Nội',
+        audi: 1,
+        type: '2D',
+        series: [ 'F', 'E', 'D', 'C', 'B', 'A' ],
+        row_section: 3,
+        seat: 18,
+        F: [1,2],
+        E: [0,1,2,3],
+        D: [3,4,5,6,7],
+        C: [2],
+        B: [3],
+        A: [4 ],
+        price: [ 55.000, 60.000, 75.000, 75.000, 60.000, 55.000],
+        date: 31,
+        img: 'img/latmat7.jpg',
+        video: 'video/LẬT MẶT 7- MỘT ĐIỀU ƯỚC - OFFICIAL TRAILER - Khởi chiếu 26.04.2024.mp4.crdownload',
+        background:'img/latmat7.jpg',
+        // backgroundticket:'img/latmat7.jpg'
+
+        
+    },
 ]
 
 
@@ -181,9 +284,25 @@ let addSeats = (arr) => {
 let data = pvr.filter(obj => obj.date == main_date && obj.movie  == url_segment[1]);
 // console.log(data);
 
-document.getElementById('title').innerText = data[0].movie;
+document.getElementById('title').innerText = data[0].title;
+document.getElementById('time').innerText = data[0].time;
+document.getElementById('MPA').innerText = data[0].MPA;
+document.getElementById('introduce1').innerText = data[0].Introduce1;
+document.getElementById('introduce2').innerText = data[0].Introduce2;
+document.getElementById('introduce3').innerText = data[0].Introduce3;
+document.getElementById('introduce4').innerText = data[0].Introduce4;
+document.getElementById('introduce5').innerText = data[0].Introduce5;
+document.getElementById('introduce6').innerText = data[0].Introduce6;
 document.getElementById('poster').src = data[0].img;
 document.getElementById('video').src = data[0].video;
+var styleElem = document.head.appendChild(document.createElement("style"));
+
+styleElem.innerHTML = `.book .right:before{background: url(${data[0].background})no-repeat center -30px/cover}`;
+
+// styleElem.innerHTML = `.book .right .ticket .tic .tic_details{
+//     background: url(${data[0].backgroundticket})no-repeat center -35px /cover;
+// }`;
+
 
 addSeats(data)
 
@@ -216,7 +335,8 @@ document.getElementById('book_ticket').addEventListener('click',() =>{
 
         let obj = {
             movie: url_segment[1],
-            date : main_date
+            date : main_date,
+            
         }
 
         let getData = pvr.map((obj)=>{
@@ -260,10 +380,10 @@ document.getElementById('book_ticket').addEventListener('click',() =>{
         <svg id="${seat_sr}${seat_no}barcode"></svg>
         <h5>Aeon Mall Hà Đông</h5>
     </div>
-    <div class="tic_details">
+    <div class="tic_details"  style=" background: url(${data[0].background})no-repeat center -35px /cover">
         <div class="type">2D</div>
         <h5 class="pvr"><span>Aeon Mall</span>Hà Đông</h5>
-        <h1>Doraemon: Nobita và Bản giao hưởng địa cầu</h1>
+        <h1>${url_segment[1]}</h1>
         <div class="seat_det">
             <div class="seat_cr">
                 <h5>Hàng</h5>
@@ -279,7 +399,7 @@ document.getElementById('book_ticket').addEventListener('click',() =>{
             </div>
             <div class="seat_cr">
                 <h5>Thời gian</h5>
-                <h5>14:00<sub>AM/sub></h5>
+                <h5>14:00<sub>AM</h5>
             </div>
             <div class="seat_cr">
                 <h5>Giá vé</h5>
@@ -305,3 +425,5 @@ document.getElementById('back_ticket').addEventListener('click',()=>{
         // window.location.reload();
 
 })
+
+
