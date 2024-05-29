@@ -10,6 +10,42 @@
 
     <title>Movie Ticket Booking Website</title>
 </head>
+<style>
+    .go-back-button {
+        position: fixed;
+        top: 20px; /* Thay đổi từ bottom: 20px thành top: 20px */
+        left: 20px; /* Thêm left: 20px để di chuyển nút sang bên trái */
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .go-back-button i {
+        font-size: 24px;
+    }
+    .reload-btn {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #ff6347;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+</style>
 
 <body>
     <div class="book">
@@ -32,7 +68,8 @@
             </div>
         </div>
         <div class="right">
-            <video src="video/PHIM ĐIỆN ẢNH DORAEMON- NOBITA VÀ BẢN GIAO HƯỞNG ĐỊA CẦU - TRAILER - DKKC- 05.2024.mp4" id="video"></video>
+            <video src="video/PHIM ĐIỆN ẢNH DORAEMON- NOBITA VÀ BẢN GIAO HƯỞNG ĐỊA CẦU - TRAILER - DKKC- 05.2024.mp4"
+                id="video"></video>
             <div class="head_time">
                 <h1 id="title">Doraemon: Nobita và Bản giao hưởng địa cầu</h1>
                 <div class="time">
@@ -45,7 +82,7 @@
                 <div class="left_card">
                     <h6 class="title">Thứ 7-Ngày 18 tháng 5</h6>
                     <div class="card_month crd">
-                       
+
                         <li>
                             <h6>Thứ 4</h6>
                             <h6 class="date_point">29</h6>
@@ -155,7 +192,10 @@
 
             <!-- chairs  -->
             <div class="chair" id="chair">
-               
+
+            </div>
+            <div class="ticket" id="ticket">
+
             </div>
             <!-- Details -->
             <div class="details" id="det">
@@ -174,6 +214,43 @@
         </div>
     </div>
     <script src="app.js"></script>
+    <script>
+        // Tạo nút bấm
+        const reloadButton = document.createElement('button');
+        reloadButton.style.backgroundColor = '#ff6347'; // Màu cam
+        reloadButton.style.borderRadius = '20px'; // Bo tròn nút
+
+        reloadButton.style.border = 'none'; // Không có viền
+        reloadButton.style.cursor = 'pointer'; // Đổi con trỏ khi di chuột vào nút
+        reloadButton.style.position = 'fixed'; // Đặt vị trí cố định
+        reloadButton.style.top = '10px'; // Khoảng cách từ trên xuống
+        reloadButton.style.right = '10px'; // Khoảng cách từ phải sang
+        reloadButton.style.fontSize = '24px'; // Kích thước biểu tượng
+
+        // Tạo biểu tượng
+        const icon = document.createElement('i');
+        icon.classList.add('bi', 'bi-arrow-clockwise', 'reload-icon');
+        reloadButton.appendChild(icon);
+        // Gán sự kiện click cho nút bấm
+        reloadButton.addEventListener('click', () => {
+            window.location.reload();
+        });
+
+        // Thêm nút bấm vào trang
+        document.body.appendChild(reloadButton);
+    </script>
+     <!-- Nội dung của trang web -->
+
+     
+    <button class="go-back-button" onclick="goBack()">
+        <i class="bi bi-arrow-left-square-fill"></i>
+    </button>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
     <!-- <script>
         JsBarcode("#barcode", "ABCD123456");
     </script> -->
